@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Color Changer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="proj1">
-        <h1>Colour Changer</h1>
-        <span class="button" id="black">
-
-        </span>
-        <span class="button" id="white">
-
-        </span>
-        <span class="button" id="yellow">
-
-        </span>
-        <span class="button" id="blue">
-
-        </span>
-        <h2>
-            Click the buttons to change background Colour
-        </h2>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p><label>Height in cm: </label><input type="text" id="height"></p>
+            <p><label>Weight in cm: </label><input type="text" id="weight"></p>
+            <button>Calculate</button>
+            <div id="ans"></div>
+            <div id="ans2"></div>
+            <div id="guide">
+                <h2>BMI Weight Guide</h2>
+                <p>Under Weight : Less than 18.6</p>
+                <p>Normal Range : 18.6 and 24.9</p>
+                <p>Overweight : greater than 24.9</p>
+            </div>
+        </form>
     </div>
     <script src="proj.js"></script>
 </body>
