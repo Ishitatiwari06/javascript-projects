@@ -12,7 +12,7 @@ form.addEventListener('submit',function(e){
         ans.innerHTML='Plz give valid weight';
     }
     else{
-        const bmi=(weight/((height*height)/1000)).toFixed(2);
+        const bmi=(weight/((height*height)/10000)).toFixed(2);
         ans.innerHTML=`<span> BMI : ${bmi}</span>`;
         if(bmi<18.6){
             ans2.innerHTML='Under Weight';
@@ -25,3 +25,4 @@ form.addEventListener('submit',function(e){
         }
     }
 })
+
