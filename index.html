@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Number Guessing Game</h2>
+        <p>Try guessing number between 1 and 100</p>
+        <form class="form">
+            <label>Guess a Number</label>
+            <p><input type="text" id="guess"></p>
+            <input type="submit" id="submit">
+        </form>
+        <div class="result">
+            <p>Previous Guesses : <span class="prev"></span></p>
+            <p>Remaining Guesses : <span class="remain">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="proj.js"></script>
+</body>
+</html>
